@@ -1,4 +1,4 @@
-package noreason.me;
+package noreason.me.leetcode;
 
 import org.junit.Test;
 
@@ -6,7 +6,12 @@ import org.junit.Test;
  * Created on 2016-07-15
  *
  * @author: MSK
- * @description: Copyright (c) 2016 infohold inc. All rights reserved.
+ *
+ * Implement atoi to convert a string to an integer.
+
+ * Hint: Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input cases.
+
+ * Notes: It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front.
  */
 public class _8 {
     public int myAtoi(String str) {
