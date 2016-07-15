@@ -1,5 +1,7 @@
 package noreason.me.leetcode;
 
+import javax.xml.bind.ValidationEvent;
+
 /**
  * Created on 2016-07-15
  *
@@ -17,4 +19,31 @@ package noreason.me.leetcode;
  * 0.1 < 1.1 < 1.2 < 13.37
  */
 public class _165 {
+    public int compareVersion(String version1, String version2) {
+        char[] vchars1 = version1.toCharArray();
+        char[] vchars2 = version2.toCharArray();
+        int idx1 = 0; int len1 = vchars1.length;
+        int idx2 = 0; int len2 = vchars2.length;
+        while(true){
+            int curV1 = 0;
+            int curV2 = 0;
+            while(idx1<len1 && vchars1[idx1]!= '.'){
+                curV1 += curV1 * 10 + (vchars1[idx1]-48);
+                idx1++;
+            }
+            while(idx2<len2 && vchars2[idx2]!= '.'){
+                curV2 += curV2 * 10 + (vchars2[idx2]-48);
+                idx2++;
+            }
+            idx1++;
+            idx2++;
+
+            if (curV1 > curV2)
+                return 1;
+            else if (curV1 < curV2)
+                return -1;
+
+            if (idx1 >= len1) return 0;
+        }
+    }
 }
