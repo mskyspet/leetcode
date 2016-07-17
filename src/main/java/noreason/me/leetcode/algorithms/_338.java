@@ -1,4 +1,7 @@
-package noreason.me.leetcode;
+package noreason.me.leetcode.algorithms;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created on 2016-07-15
@@ -23,6 +26,7 @@ public class _338 {
             if (i%base==0) base<<=1;
         }
         return result;
+
     }
 
 }

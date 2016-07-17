@@ -1,4 +1,4 @@
-package noreason.me.leetcode;
+package noreason.me.leetcode.algorithms;
 
 import org.junit.Test;
 
